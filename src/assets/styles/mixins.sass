@@ -1,0 +1,35 @@
+@use 'sass:map'
+@use 'variables'
+
+@mixin centered-display($direction)
+    display: flex
+    flex-direction: $direction
+    align-items: center
+
+@mixin media-max-w($size)
+    @media (max-width: map.get(variables.$media-breakpoints, $size))
+        @content
+
+@mixin shadow($type, $spread, $alpha: 1)
+    @if $type == box
+        box-shadow: 0px 0px $spread rgb(variables.$dark-slate, $alpha)
+    @else
+        text-shadow: 0px 0px $spread rgb(variables.$dark-slate, $alpha)
+
+@mixin neu-shadow
+    box-shadow: -6px -6px 16px rgb(variables.$purple-background, 0.6), 6px 6px 16px rgb(black, 0.5)
+    border: solid 1px rgb(variables.$dark-slate, 0.2)
+
+@mixin neu-button
+    padding: 0.5rem
+    background-color: rgb(variables.$dark-slate, 0.5)
+    color: variables.$white
+    border: solid 1px rgb(variables.$white, 0.3)
+    border-radius: 20px
+    box-shadow: 0px 0px 20px rgb(variables.$dark-slate, 1)
+    cursor: pointer
+
+    @content
+
+    &:hover
+        background-color: rgb(variables.$purple-background, 0.5)
