@@ -1,5 +1,6 @@
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata } from 'next'
 import { DM_Sans } from 'next/font/google'
 import Image from 'next/image'
@@ -38,6 +39,7 @@ export default function RootLayout({ children }: Readonly<IProps>) {
     return (
         <html lang="en">
             <body className={`${dmSans.className}`}>
+                <SpeedInsights />
                 <div className={styles.backgroundWrapper}>
                     <Image
                         style={imageStyle}
