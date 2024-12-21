@@ -1,4 +1,4 @@
-import { ButtonTree, ContentSection, IconButtonProps } from '@/components'
+import { ButtonTree, ContentSection, LinkButtonProps } from '@/components'
 import {
     faApple,
     faBandcamp,
@@ -7,7 +7,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 
 export default function Music() {
-    const items: IconButtonProps[] = [
+    const items: LinkButtonProps[] = [
         {
             href: '/spotify',
             icon: faSpotify,

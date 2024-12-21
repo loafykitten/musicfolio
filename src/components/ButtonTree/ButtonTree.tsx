@@ -1,8 +1,8 @@
-import { IconButtonProps, LinkButton } from '@/components/LinkButton/LinkButton'
+import { LinkButton, LinkButtonProps } from '@/components/LinkButton/LinkButton'
 import styles from './ButtonTree.module.sass'
 
 interface IProps {
-    items: IconButtonProps[]
+    items: LinkButtonProps[]
 }
 
 export default function ButtonTree({ items }: IProps) {

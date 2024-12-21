@@ -1,6 +1,6 @@
 type LogObject = {
     message: string
-    debugObject?: any
+    debugObject?: unknown
 }
 
 export type { LogObject }

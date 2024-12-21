@@ -1,4 +1,4 @@
-import { ButtonTree, ContentSection, IconButtonProps } from '@/components'
+import { ButtonTree, ContentSection, LinkButtonProps } from '@/components'
 import {
     faInstagram,
     faThreads,
@@ -7,7 +7,7 @@ import {
 import { faMugHot } from '@fortawesome/free-solid-svg-icons'
 
 export default function Socials() {
-    const items: IconButtonProps[] = [
+    const items: LinkButtonProps[] = [
         {
             href: '/ko-fi',
             icon: faMugHot,

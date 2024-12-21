@@ -33,4 +33,4 @@ export default function LinkButton(props: IProps) {
     )
 }
 
-export { LinkButton, type IProps as IconButtonProps }
+export { LinkButton, type IProps as LinkButtonProps }

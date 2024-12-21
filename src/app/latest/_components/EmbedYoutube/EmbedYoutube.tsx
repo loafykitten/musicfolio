@@ -1,11 +1,11 @@
 import { ButtonTree } from '@/components'
-import { IconButtonProps } from '@/components/LinkButton/LinkButton'
+import { LinkButtonProps } from '@/components/LinkButton/LinkButton'
 import { getLatest } from '@/features/youtube/actions'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 const EmbedYoutube = async () => {
     const data = await getLatest()
-    const props: IconButtonProps = {
+    const props: LinkButtonProps = {
         href: `https://music.youtube.com/playlist?list=${data.audioPlaylistId}`,
         icon: faYoutube,
         title: 'youtube music',

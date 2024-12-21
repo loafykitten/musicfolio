@@ -29,4 +29,4 @@ const ActionButton = (props: IProps) => {
     )
 }
 
-export { ActionButton, type IProps as IconButtonProps }
+export { ActionButton, type IProps as ActionButtonProps }
