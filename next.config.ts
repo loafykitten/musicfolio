@@ -8,6 +8,18 @@ const nextConfig: NextConfig = {
     redirects: async () => {
         return [
             {
+                source: '/apple',
+                destination:
+                    'https://music.apple.com/us/artist/loafykitten/1783440564',
+                permanent: false,
+            },
+            {
+                source: '/spotify',
+                destination:
+                    'https://open.spotify.com/artist/0ZfBpHDCXgU2LbRyZYfJbZ?si=jbzXLgm1QLSg6-TjwjXL9A',
+                permanent: false,
+            },
+            {
                 source: '/bandcamp',
                 destination: 'https://loafykitten.bandcamp.com',
                 permanent: false,
