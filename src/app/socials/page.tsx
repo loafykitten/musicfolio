@@ -35,7 +35,7 @@ export default function Socials() {
     ]
 
     return (
-        <ContentSection section="music">
+        <ContentSection section="socials">
             <ButtonTree items={items} />
         </ContentSection>
     )
