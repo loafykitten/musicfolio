@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import avatar from '@/assets/images/avatar.png'
+import avatar from '@/assets/images/avatar.jpg'
 import styles from './Avatar.module.sass'
 
 export default function Avatar() {

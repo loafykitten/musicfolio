@@ -54,7 +54,7 @@ const nextConfig: NextConfig = {
             },
             {
                 source: '/youtube',
-                destination: 'https://youtube.com/@BR4TC4T',
+                destination: 'https://youtube.com/@loafykitten',
                 permanent: false,
             },
         ]
